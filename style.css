@@ -2,26 +2,90 @@
 body, html {
     height: 100%;
     margin: 0;
+    font-family: sans-serif;
 }
 
 .container {
     display: flex;
+    flex-direction: row;
     height: 100%;
 }
 
-img {
-    height: 100%;
-    width: 40%;
-}
-
-h1 {
-    text-align: center;
+.left {
+    position: relative;
 }
 
 .right {
-    display: block
+    background-color: aliceblue;
 }
 
-form {
+.centered {
+    font-size: 1.5vw;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+img {
+    height: 100%;
+    max-width: 100%;
+}
+
+.header {
+    padding: 50px;
     margin: 20px;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+fieldset, legend {
+    background-color: white;
+    border: none;
+    padding: 20px;
+}
+
+form p {
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+}
+
+section div {
+    margin: 20px;
+}
+
+input, label {
+    display: block;
+}
+
+input {
+    border-radius: 12px;
+    padding: 5px;
+}
+
+button {
+    background-color: #596d48;
+    color: white;
+    margin: 40px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+.login {
+    margin-left: 40px;
+}
+
+a {
+    color: #596d48;
+    text-decoration: none;
+    font-weight: bold;
 }

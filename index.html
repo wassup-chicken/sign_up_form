@@ -9,26 +9,61 @@
 </head>
 <body>
     <div class="container">
-    <img src="./images/background.png" />
+    <div class="left">
+        <img src="./images/background.png" />
+        <div class="centered">The Wassap Chicken</div>
+    </div>
+    
     <div class="right">
-    <h1>Sign Up Form</h1>
-
-    <form>
-        <label>First Name</label>
-        <input >
-        <label>Last Name</label>
-        <input >
-        <label>Email</label>
-        <input >
-        <label>Phone Number</label>
-        <input >
-        <label>Password</label>
-        <input >
-        <label>Confirm Password</label>
-        <input >
-        <button>Create Account</button>
+        <div class="header">
+            <div>
+            <h2>This is not a real online service! You know hyou need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</h2>
+            </div>
+            <div>
+            <h2>You know you want to.</h2>
+            </div>
+        </div>
+        <div class="forms">
+    <form action="#" method="#" >
+        <fieldset>
+            <p>Let's do this!</p>
+            <section>
+                <div>
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name" required>
+                </div>
+                <div>
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name" required>
+                </div>
+            </section>
+            <section>
+                <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" required>
+                </div>
+            </section>
+            <section>
+                <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" minlength="10" required>
+                </div>
+                <div>
+                <label for="cf_pw">Confirm Password</label>
+                <input type="password" id="cf_pw" name="cf_pw" minlength="10" required>
+                </div>
+            </section>
+        </fieldset>
+            <button type="submit">Create Account</button>
     </form>
+        <div class="login">Already have an account? <a href="#">Log in</a></div>
+    </div>
+    </div>
 </div>
-</div>
+<script src="./scripts/script.js"></script>
 </body>
 </html>
