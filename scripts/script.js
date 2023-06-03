@@ -13,18 +13,25 @@ element.addEventListener('click', (e) => {
     });
 
     if (empty) {
-        alert('yoo come on');
+        alert('yoo come on, fill out everything...');
         e.preventDefault();
         return false;
     }
 
     if (validate()) {
-        alert('invalid!');
+        console.log('invalid');
         e.preventDefault();
+        console.log(document.getElementsByClassName('error'));
+        // let x = document.querySelectorAll('.error');
+        // x.forEach(d => {
+        //     document.getElementById(d.id).innerHTML = 
+        // })
+
+
         return false;
     }
 
-    alert("You have given us your info...!")
+    alert("You have given us your info...!");
     return true;
 
 });
@@ -34,11 +41,13 @@ element.addEventListener('click', (e) => {
 const validate = () => {
 
     if (first_name.value.length < 5) {
+        document.getElementById('error_fname').innerHTML = 'Invalid First Name'
         return true;
     };
 
     if (last_name.value.length < 5) {
         console.log('last_name invalid');
+        document.getElementById('error_lname').innerHTML = 'Invalid Error'
         return true;
     }
 
@@ -56,11 +65,13 @@ const validate = () => {
 
     if (password.value.length < 10) {
         console.log('pw too short');
+        document.getElementById('error_pw').innerHTML = 'Invalid Password'
         return true;
     }
 
     if (password.value.length < 10) {
         console.log('cf pw too short');
+        document.getElementById('error_cpw').innerHTML = 'Invalid Password'
         return true;
     }
 
