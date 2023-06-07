@@ -1,13 +1,13 @@
 
 body, html {
-    height: 100%;
     margin: 0;
+    padding: 0;
     font-family: sans-serif;
+    height: 100%;
 }
 
 .container {
     display: flex;
-    flex-direction: row;
     height: 100%;
 }
 
@@ -20,17 +20,25 @@ body, html {
 }
 
 .centered {
-    font-size: 1.5vw;
+    font-size: 2vw;
     color: white;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'coolfont', sans-serif;
+    text-align: center;
   }
 
-img {
-    height: 100%;
-    max-width: 100%;
+.logo {
+    height: 25vh;
+    width: 10vw;
+}
+
+.background {
+    height: 100vh;
+    width: 30vw;
+    display: block;
 }
 
 .header {
@@ -67,6 +75,10 @@ input, label {
     display: block;
 }
 
+label {
+    font-weight: bold;
+}
+
 input {
     border-radius: 12px;
     padding: 5px;
@@ -97,3 +109,20 @@ a {
     color: red;
     
 }
+
+/* .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: pink;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+} */
+
+@font-face {
+    font-family: 'coolfont';
+    src: url(./fonts/Norse-Bold.otf);
+}
+

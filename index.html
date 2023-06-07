@@ -10,8 +10,11 @@
 <body>
     <div class="container">
     <div class="left">
-        <img src="./images/background.png" />
-        <div class="centered">The Wassap Chicken</div>
+        <img class="background" src="./images/background.png" />
+        <div class="centered">
+            <img class="logo" src="./images/odin-lined.png" />
+            <p>The Wassap Chicken</p>
+        </div>
     </div>
     
     <div class="right">
@@ -31,36 +34,36 @@
                 <div>
                 <label for="first_name">First Name</label>
                 <input type="text" id="first_name" name="first_name">
-                <div class="error" id="error_fname"></div>
+                <div class="error first_name" id="error_fname"></div>
                 </div>
                 <div>
                 <label for="last_name">Last Name</label>
                 <input type="text" id="last_name" name="last_name">
-                <div class='error' id="error_lname"></div>
+                <div class='error last_name' id="error_lname"></div>
                 </div>
             </section>
             <section>
                 <div>
                 <label for="email">Email</label>
                 <input type="text" id="email" name="email">
-                <div class='error' id="error_email"></div>
+                <div class='error email' id="error_email"></div>
                 </div>
                 <div>
                 <label for="phone">Phone</label>
                 <input type="text" id="phone" name="phone">
-                <div class='error' id="error_phone"></div>
+                <div class='error phone' id="error_phone"></div>
                 </div>
             </section>
             <section>
                 <div>
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" minlength="10">
-                <div class="error" id="error_pw"></div>
+                <div class="error password" id="error_pw"></div>
                 </div>
                 <div>
                 <label for="cf_pw">Confirm Password</label>
                 <input type="password" id="cf_pw" name="cf_pw" minlength="10">
-                <div class="error" id="error_cpw"></div>
+                <div class="error cf_pw" id="error_cpw"></div>
                 </div>
             </section>
         </fieldset>
@@ -70,6 +73,7 @@
     </div>
     </div>
 </div>
+
 <script src="./scripts/script.js"></script>
 </body>
 </html>
