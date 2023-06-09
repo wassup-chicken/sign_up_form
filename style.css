@@ -110,7 +110,7 @@ a {
     
 }
 
-/* .footer {
+.footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -119,10 +119,38 @@ a {
     color: white;
     text-align: center;
     font-weight: bold;
-} */
+}
 
 @font-face {
     font-family: 'coolfont';
     src: url(./fonts/Norse-Bold.otf);
 }
 
+@media screen and (max-width: 1000px) {
+    .container { display: block; }
+    .background {
+        height: 25vh;
+        width: 100vw;
+    }
+    .centered {
+        font-size: 5vw;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'coolfont', sans-serif;
+        text-align: center;
+    }
+    .logo {
+        height: 10vh;
+        width: 20vw;
+    }
+    .header {
+        margin: 0;
+    }
+    .right {
+        height: 75vh;
+    }
+    
+}

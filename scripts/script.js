@@ -1,6 +1,3 @@
-
-console.log(cf_pw);
-
 const element = document.querySelector('.submit');
 
 const inputs = document.querySelectorAll('input');
@@ -38,8 +35,6 @@ element.addEventListener('click', (e) => {
 
 });
 
-
-
 const validate = () => {
 
     if (first_name.value.length === 0) {
@@ -49,16 +44,20 @@ const validate = () => {
 
     if (last_name.value.length === 0) {
         console.log('last_name invalid');
-        document.getElementById('error_lname').innerHTML = 'Invalid Error'
+        document.getElementById('error_lname').innerHTML = 'Invalid Last Name'
         return true;
     }
 
-    if (!email.value) {
-        return true;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email.value)) {
+    document.getElementById('error_email').innerHTML = 'Invalid Email';
+    return true;
     }
 
-    if (!phone.value) {
-        return true;
+    const numbers = /^\d+$/;
+    if (!numbers.test(phone.value) || phone.value.length < 10) {
+    document.getElementById('error_phone').innerHTML = 'Invalid Phone';
+    return true;
     }
 
     if (password.value.length < 10) {
